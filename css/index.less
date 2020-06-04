@@ -1,0 +1,154 @@
+// 清除默认样式
+*{
+	margin: 0;
+	padding: 0;
+}
+
+// 定义变量
+// 定义设计图的宽度
+@page-width:750;
+// 定义扩大的倍数
+@num:40;
+@bg-color:#eff0f4;
+@color:black;
+html{
+	font-size:100vw/ @page-width*40;
+	background-color:@bg-color;
+}
+body{
+	height: 2000rem/@num;
+}
+.w{
+	width:693rem/@num;
+	margin: 0 auto;
+}
+
+.header{
+	
+	&:extend(.w);
+	// background: yellow;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	height:175rem/@num;
+	color: #999;
+	font-size: 35rem / @num;
+	a{
+		font-size: 40rem/@num;
+		text-decoration: none;
+		color: #999;
+		
+	}
+	h2{
+		color: black;
+	
+	}
+	div{
+		font-size: 40rem/@num;	
+		
+	}
+    
+}
+.banner{
+	
+	img{
+		width: 100%;
+		
+	}
+}
+
+.content{
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-flow: row wrap;
+	&:extend(.w);
+	height:300rem/@num;
+	// background-color:yellow;
+	
+	.items{
+		font-size: 32rem/@num;
+		width: 329rem/@num;
+		background: white;
+		height: 103rem/@num;
+		align-content: space-between;
+		margin: 13px 0;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		color: white;
+		border-radius: 10rem/@num;
+		&:nth-child(1){
+			background-color: #f97053;
+		}
+		&:nth-child(2){
+			background-color: #cf73fe;
+		}
+		
+		&:nth-child(3){
+			background-color: #ff3971;
+		}
+		
+		&:nth-child(4){
+			background-color: #1cabfd;
+		}
+		i{
+			font-size: 50rem/@num;
+		}
+	}
+}
+.text{
+	&:extend(.w);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100rem/@num;
+	>.latest{
+		font-size: 28rem/@num;
+		font-weight: bold;
+	}
+	>.more{
+		font-size: 25rem/@num;
+		color: #999;
+	}
+	
+}
+.popular{
+	padding: 22rem/@num;
+	height: 324rem/@num;
+	&:extend(.w);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	// background-color: #cf73fe;
+	>.items{
+		height: 324rem/@num;
+		width:326rem/@num;
+		// background-color: white;
+		text-align: center;
+		img{
+			width: 284rem/@num;
+			height: 156rem/@num;
+		}
+		>p{
+			font-size: 30rem/@num;
+		}
+		>.avatar{
+			
+			display: inline-block;
+			width: 40rem/@num;
+			height: 40rem/@num;
+			background-color: #f97053;
+			border-radius: 50%;
+			margin-left:-100rem/@num;
+			margin-top: 20rem/@num;
+		}
+		>.name{
+			margin-top: 20rem/@num;
+			color: #999;
+			font-size: 25rem/@num;
+		}
+}
+}
+

@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 5.33333333vw;
+  background-color: #eff0f4;
+}
+body {
+  height: 50rem;
+}
+.w,
+.header,
+.content,
+.text,
+.popular {
+  width: 17.325rem;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.375rem;
+  color: #999;
+  font-size: 0.875rem;
+}
+.header a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #999;
+}
+.header h2 {
+  color: black;
+}
+.header div {
+  font-size: 1rem;
+}
+.banner img {
+  width: 100%;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  height: 7.5rem;
+}
+.content .items {
+  font-size: 0.8rem;
+  width: 8.225rem;
+  background: white;
+  height: 2.575rem;
+  align-content: space-between;
+  margin: 13px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  border-radius: 0.25rem;
+}
+.content .items:nth-child(1) {
+  background-color: #f97053;
+}
+.content .items:nth-child(2) {
+  background-color: #cf73fe;
+}
+.content .items:nth-child(3) {
+  background-color: #ff3971;
+}
+.content .items:nth-child(4) {
+  background-color: #1cabfd;
+}
+.content .items i {
+  font-size: 1.25rem;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+}
+.text > .latest {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.text > .more {
+  font-size: 0.625rem;
+  color: #999;
+}
+.popular {
+  padding: 0.55rem;
+  height: 8.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular > .items {
+  height: 8.1rem;
+  width: 8.15rem;
+  text-align: center;
+}
+.popular > .items img {
+  width: 7.1rem;
+  height: 3.9rem;
+}
+.popular > .items > p {
+  font-size: 0.75rem;
+}
+.popular > .items > .avatar {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #f97053;
+  border-radius: 50%;
+  margin-left: -2.5rem;
+  margin-top: 0.5rem;
+}
+.popular > .items > .name {
+  margin-top: 0.5rem;
+  color: #999;
+  font-size: 0.625rem;
+}
